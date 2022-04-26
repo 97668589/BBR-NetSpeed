@@ -1,3 +1,9 @@
+
+
+
+
+
+
 <!DOCTYPE html>
 <html lang="en" data-color-mode="light" data-light-theme="light" data-dark-theme="dark" >
   <head>
@@ -52,7 +58,7 @@
 
   <meta name="viewport" content="width=device-width">
   
-  <title>Linux-NetSpeed/tcpx.sh at master · 97668589/BBR-NetSpeed</title>
+  <title>BBR-NetSpeed/tcpx.sh at master · 97668589/BBR-NetSpeed</title>
     <meta name="description" content="将Linux现常用的网络加速集成在一起. Contribute to 97668589/BBR-NetSpeed development by creating an account on GitHub.">
     <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="GitHub">
   <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub">
@@ -67,12 +73,12 @@
     
 
   <link rel="assets" href="https://github.githubassets.com/">
-    <link rel="shared-web-socket" href="wss://alive.github.com/_sockets/u/56907698/ws?session=eyJ2IjoiVjMiLCJ1Ijo1NjkwNzY5OCwicyI6ODY5MzQyNzY2LCJjIjoxNjczNjQwNzgwLCJ0IjoxNjUwOTg3MjA1fQ==--c7656fb80bee6997fdf3abae75fa661f8a47b3ea4e3cfcd5553132e4f4bf4e76" data-refresh-url="/_alive" data-session-id="c77894629eab4eb7fe12f29b6e063d5e08f51298bd9da453f0f041841d6d84e0">
+    <link rel="shared-web-socket" href="wss://alive.github.com/_sockets/u/56907698/ws?session=eyJ2IjoiVjMiLCJ1Ijo1NjkwNzY5OCwicyI6ODY5MzQyNzY2LCJjIjo4ODE3NTgzNTksInQiOjE2NTA5OTI0MDF9--c86a5790f126fc7c3f50212669d950f5c64c83ed574c6ad2db74b527fc763100" data-refresh-url="/_alive" data-session-id="c77894629eab4eb7fe12f29b6e063d5e08f51298bd9da453f0f041841d6d84e0">
     <link rel="shared-web-socket-src" href="/assets-cdn/worker/socket-worker-b98ccfd9236e.js">
   <link rel="sudo-modal" href="/sessions/sudo_modal">
 
 
-  <meta name="request-id" content="900E:3D8D:7A1106:94215B:626810C4" data-pjax-transient="true" /><meta name="html-safe-nonce" content="d55de6ea1994adf1852d0892a9559a6c94d71ba2a99ecdc7a00761c86c4cf2b4" data-pjax-transient="true" /><meta name="visitor-payload" content="eyJyZWZlcnJlciI6Imh0dHBzOi8vZ2l0aHViLmNvbS95bHgyMDE2L0xpbnV4LU5ldFNwZWVkIiwicmVxdWVzdF9pZCI6IjkwMEU6M0Q4RDo3QTExMDY6OTQyMTVCOjYyNjgxMEM0IiwidmlzaXRvcl9pZCI6IjY4MjM1NTIxMTI2MDYzOTU2NDAiLCJyZWdpb25fZWRnZSI6InNlYSIsInJlZ2lvbl9yZW5kZXIiOiJpYWQifQ==" data-pjax-transient="true" /><meta name="visitor-hmac" content="c07f834e514242e6404fecc1d030af9f20565634712d41b0a151fca183c8410e" data-pjax-transient="true" />
+  <meta name="request-id" content="A960:06AC:1CA254:3526D7:62682510" data-pjax-transient="true" /><meta name="html-safe-nonce" content="d55de6ea1994adf1852d0892a9559a6c94d71ba2a99ecdc7a00761c86c4cf2b4" data-pjax-transient="true" /><meta name="visitor-payload" content="eyJyZWZlcnJlciI6Imh0dHBzOi8vZ2l0aHViLmNvbS95bHgyMDE2L0xpbnV4LU5ldFNwZWVkIiwicmVxdWVzdF9pZCI6IkE5NjA6MDZBQzoxQ0EyNTQ6MzUyNkQ3OjYyNjgyNTEwIiwidmlzaXRvcl9pZCI6IjY4MjM1NTIxMTI2MDYzOTU2NDAiLCJyZWdpb25fZWRnZSI6InNlYSIsInJlZ2lvbl9yZW5kZXIiOiJpYWQifQ==" data-pjax-transient="true" /><meta name="visitor-hmac" content="5979a526b5220dbea653745e060719f40f51859a330a4de48ebfd826e22570c9" data-pjax-transient="true" />
 
     <meta name="hovercard-subject-tag" content="repository:214605964" data-pjax-transient>
 
@@ -108,7 +114,7 @@
 
       <meta name="expected-hostname" content="github.com">
 
-      <meta name="js-proxy-site-detection-payload" content="ZjZmZmM5MGVjNjU4MDU4Y2ZmMGEyNDdhNzBkYmM3ZjY3NGNmNzAwZDczN2QxZjVlZjkzMmI3M2NmNWNiNzE5Nnx7InJlbW90ZV9hZGRyZXNzIjoiOC40NS40MS43NyIsInJlcXVlc3RfaWQiOiI5MDBFOjNEOEQ6N0ExMTA2Ojk0MjE1Qjo2MjY4MTBDNCIsInRpbWVzdGFtcCI6MTY1MDk4NzIwNSwiaG9zdCI6ImdpdGh1Yi5jb20ifQ==">
+      <meta name="js-proxy-site-detection-payload" content="ZjYyN2E0ZWI1ZDM3YjAzZjFjMDE0MmNlNDE4ZDYwNjliODdlMjZjMmY1YmQwZGJkMTU0MjhjMjVkYjI2ZDM1Mnx7InJlbW90ZV9hZGRyZXNzIjoiOC40NS40MS43NyIsInJlcXVlc3RfaWQiOiJBOTYwOjA2QUM6MUNBMjU0OjM1MjZENzo2MjY4MjUxMCIsInRpbWVzdGFtcCI6MTY1MDk5MjQwMSwiaG9zdCI6ImdpdGh1Yi5jb20ifQ==">
 
     <meta name="enabled-features" content="ACTIONS_CALLABLE_WORKFLOWS,MARKETPLACE_PENDING_INSTALLATIONS,PRESENCE_IDLE">
 
@@ -217,7 +223,7 @@
           spellcheck="false"
           autocomplete="off"
         >
-        <input type="hidden" value="gpOfexdenjEZRn3kJuddHTS_NYKaW2BWunsxRZcY1K1Y8Bu5hMw9gEA5p2LiU795vpntWp1bKU56SUdtlaDflA" data-csrf="true" class="js-data-jump-to-suggestions-path-csrf" />
+        <input type="hidden" value="eO9vbnD06mUUU9Zm0H4ifQ5zHls-oJBhFbpgpRjcwlKijOus42ZJ1E0sDOAUysAZhFXGgzmg2XnViBaNGmTJaw" data-csrf="true" class="js-data-jump-to-suggestions-path-csrf" />
         <input type="hidden" class="js-site-search-type-field" name="type" >
             <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" aria-hidden="true" class="mr-1 header-search-key-slash"><path fill="none" stroke="#979A9C" opacity=".4" d="M3.5.5h12c1.7 0 3 1.3 3 3v13c0 1.7-1.3 3-3 3h-12c-1.7 0-3-1.3-3-3v-13c0-1.7 1.3-3 3-3z"></path><path fill="#979A9C" d="M11.8 6L8 15.1h-.9L10.8 6h1z"></path></svg>
 
@@ -424,7 +430,7 @@
       <img class="avatar avatar-user" loading="lazy" decoding="async" src="https://avatars.githubusercontent.com/u/56907698?s=40&amp;v=4" width="20" height="20" alt="@97668589" />
       97668589
 </a>
-    <!-- '"` --><!-- </textarea></xmp> --></option></form><form data-turbo="false" action="/logout" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="2597R0mwrYLtskDnd0nwDpvKXN75Lhv8HnFQL1PvMcqMPS6W8tzJHSJGOvz4wTN4Jahux-VVm8A5nv7R7_KDqQ" />
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form data-turbo="false" action="/logout" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="Ps2KJHwcKMDl-vYAY_jBPTyOXCrTkOfp4E-YG0yEYFtpb9_1x3BMXyoOjBvscAJLguxuM8_rZ9XHoDbl8JnSOA" />
       <button
         type="submit"
         class="Header-link mr-0 mr-md-3 py-2 py-md-3 border-top border-md-top-0 border-white-fade d-md-none btn-link d-block width-full text-left"
@@ -463,7 +469,7 @@
       <notification-indicator
         class="js-socket-channel"
         data-test-selector="notifications-indicator"
-        data-channel="eyJjIjoibm90aWZpY2F0aW9uLWNoYW5nZWQ6NTY5MDc2OTgiLCJ0IjoxNjUwOTg3MjA1fQ==--23b187d3120ddee23e74ebb08fb41863a4b29b91bb4acfb62a65bdbf0352759d">
+        data-channel="eyJjIjoibm90aWZpY2F0aW9uLWNoYW5nZWQ6NTY5MDc2OTgiLCJ0IjoxNjUwOTkyNDAxfQ==--09bd771401524212237b43df5e59a7108301231e1100d583215248be807a61bb">
         <a href="/notifications"
           class="Header-link notification-indicator position-relative tooltipped tooltipped-sw"
           
@@ -613,10 +619,10 @@
 
 
       <input type="hidden" name="color-mode-path" id="color-mode-path" value="/settings/appearance/color_mode" class="js-color-mode-path" autocomplete="off" />
-      <input type="hidden" value="XnwYMlsMgw3W_d-pYdm1oNljL1UPo3r1U_o6u29CKw7nFbtpsxL1ZuQnl73mvuSwBN3I2jKd1xlIkTSIz_rnjg" data-csrf="true" class="js-color-mode-csrf" />
+      <input type="hidden" value="3CsbBHykjbRhG0emP7tEovAu-JO5Eppts-_bzFPpr-BlQrhflLr731PBD7K43BWyLZAfHIQsN4GohNX_81FjYA" data-csrf="true" class="js-color-mode-csrf" />
 
       <input type="hidden" name="tab-size-path" id="tab-size-path" value="/settings/appearance/tab_size" class="js-tab-size-path" autocomplete="off" />
-      <input type="hidden" value="UloPKutsQ0csJ-r-eErO05Fm3MockxBpcFcngRmRzOMut3mQmX-jLUnMIa-fz9fWiaa6N2OKpVrR4BFhxZV2jA" data-csrf="true" class="js-tab-size-csrf" />
+      <input type="hidden" value="3j4nerBqP-a8diDsNvxCDDGfQC2zF2Stz74vx0TFMiOi01HAwnnfjNmd673ReVsJKV8m0MwO0Z5uCRknmMGITA" data-csrf="true" class="js-tab-size-csrf" />
 
         <command-palette-mode
           data-char="#"
@@ -1587,7 +1593,7 @@
             </header>
 
             <div class="SelectMenu-list">
-              <form data-target="notifications-list-subscription-form.form" data-action="submit:notifications-list-subscription-form#submitForm" data-turbo="false" action="/notifications/subscribe" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="kn1lhbMEYaniL8BbSMCnJkPn0wt0UK_xDL3WstgxRl_rdm3wM6NR5my7KP9jZoQT8XkzrcFWuz_WvPpyRpqnxw" autocomplete="off" />
+              <form data-target="notifications-list-subscription-form.form" data-action="submit:notifications-list-subscription-form#submitForm" data-turbo="false" action="/notifications/subscribe" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="LIBCDK2OYb3-8GmPcsZSNSWc7U_iCEqDYcoo6XV79ztVi0p5LSlR8nBkgStZYHEAlwIN6VcOXk27ywQp69AWow" autocomplete="off" />
 
                 <input type="hidden" name="repository_id" value="214605964">
 
@@ -1715,7 +1721,7 @@
           hidden
         >
           <div class="SelectMenu-modal notifications-component-dialog-modal overflow-visible">
-            <form data-target="notifications-list-subscription-form.customform" data-action="submit:notifications-list-subscription-form#submitCustomForm" data-turbo="false" action="/notifications/subscribe" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="5BKtPE_EsIZzV1TdivzgV3ueynwr2kcvgub9mc3WsCidGaVJz2OAyf3DvHmhWsNiyQAq2p7cU-FY59FZU31RsA" autocomplete="off" />
+            <form data-target="notifications-list-subscription-form.customform" data-action="submit:notifications-list-subscription-form#submitCustomForm" data-turbo="false" action="/notifications/subscribe" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="Ps2lZQMhyEV_PZPxL4xH6eKx0HACtmI2BnnZr5-BlvlHxq0Qg4b4CvGpe1UEKmTcUC8w1rewdvjcePVvASp3YQ" autocomplete="off" />
 
               <input type="hidden" name="repository_id" value="214605964">
 
@@ -1899,8 +1905,8 @@
 </template>
 
   <div data-view-component="true" class="js-toggler-container js-social-container starring-container BtnGroup d-flex">
-    <form class="starred js-social-form BtnGroup-parent flex-auto js-deferred-toggler-target" data-turbo="false" action="/97668589/BBR-NetSpeed/unstar" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="QaE91o6BVTO5PUCePWCUzH8fxyjZFIhA8ifAbrIz6xM_2MdUSs4650zQW52wAUAi05pjunecaIE2SXUuwlKBIQ" autocomplete="off" />
-        <input type="hidden" value="GTnsDDWIf8ull5cFvgvJrKq6C7m0Q5AVsS0rCDD0VypnQBaO8ccQH1B6jAYzah1CBj-vKxrLcNR1Q55IQJU9GA" data-csrf="true" class="js-confirm-csrf-token" />
+    <form class="starred js-social-form BtnGroup-parent flex-auto js-deferred-toggler-target" data-turbo="false" action="/97668589/BBR-NetSpeed/unstar" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="5vllH-50A250Dx0TgdaAv0WUzNsO6S2beuEuT6beIdqYgJ-dKjtsuoHiBhAMt1RR6RFoSaBhzVq-j5sP1r9L6A" autocomplete="off" />
+        <input type="hidden" value="N9_rNwtm9f3sYseTNWVY4NcA_DzC9-SlEE54UF-J3WlJphG1zymaKRmP3JC4BIwOe4VYrmx_BGTUIM0QL-i3Ww" data-csrf="true" class="js-confirm-csrf-token" />
       <input type="hidden" name="context" value="repository">
       <button data-hydro-click="{&quot;event_type&quot;:&quot;repository.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;UNSTAR_BUTTON&quot;,&quot;repository_id&quot;:214605964,&quot;originating_url&quot;:&quot;https://github.com/97668589/BBR-NetSpeed/blob/master/tcpx.sh&quot;,&quot;user_id&quot;:56907698}}" data-hydro-click-hmac="83d72b89b74e34514fa6573c760391e50de7fdcacabe5361fbcb87b9133144cc" data-ga-click="Repository, click unstar button, action:blob#show; text:Unstar" aria-label="Unstar this repository" type="submit" data-view-component="true" class="rounded-left-2 border-right-0 btn-sm btn BtnGroup-item">  <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-star-fill starred-button-icon d-inline-block mr-2">
     <path fill-rule="evenodd" d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25z"></path>
@@ -1909,7 +1915,7 @@
 </span>          <span id="repo-stars-counter-unstar" aria-label="1225 users starred this repository" data-singular-suffix="user starred this repository" data-plural-suffix="users starred this repository" data-pjax-replace="true" title="1,225" data-view-component="true" class="Counter js-social-count">1.2k</span>
   
 </button></form>
-    <form class="unstarred js-social-form BtnGroup-parent flex-auto" data-turbo="false" action="/97668589/BBR-NetSpeed/star" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="0cRyoSQHvz1Z7yfOpQSBdOgvhj8oJYWsItFDvLaTKLm4NeYdlxTm84hU3GJZsaYY_vZ2G36KTAOdpVv2wAtyWA" autocomplete="off" />
+    <form class="unstarred js-social-form BtnGroup-parent flex-auto" data-turbo="false" action="/97668589/BBR-NetSpeed/star" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="IJpgYCEHdMsH3Sg6J7Pe98DR8twKbn1OtCWzYeIpGvBJa_TckhQtBdZm05bbBvmb1ggC-FzBtOELUasrlLFAEQ" autocomplete="off" />
       <input type="hidden" name="context" value="repository">
       <button data-hydro-click="{&quot;event_type&quot;:&quot;repository.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;STAR_BUTTON&quot;,&quot;repository_id&quot;:214605964,&quot;originating_url&quot;:&quot;https://github.com/97668589/BBR-NetSpeed/blob/master/tcpx.sh&quot;,&quot;user_id&quot;:56907698}}" data-hydro-click-hmac="2b981a8889e66b426581a45b527a79eb962de8b09841ac41b43776112eea2058" data-ga-click="Repository, click star button, action:blob#show; text:Star" aria-label="Star this repository" type="submit" data-view-component="true" class="js-toggler-target rounded-left-2 btn-sm btn BtnGroup-item">  <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-star d-inline-block mr-2">
     <path fill-rule="evenodd" d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25zm0 2.445L6.615 5.5a.75.75 0 01-.564.41l-3.097.45 2.24 2.184a.75.75 0 01.216.664l-.528 3.084 2.769-1.456a.75.75 0 01.698 0l2.77 1.456-.53-3.084a.75.75 0 01.216-.664l2.24-2.183-3.096-.45a.75.75 0 01-.564-.41L8 2.694v.001z"></path>
@@ -1932,13 +1938,13 @@
       
 >
     <div class="SelectMenu-modal">
-        <button class="SelectMenu-closeButton position-absolute right-0 m-2" type="button" aria-label="Close menu" data-toggle-for="details-08c8ea">
+        <button class="SelectMenu-closeButton position-absolute right-0 m-2" type="button" aria-label="Close menu" data-toggle-for="details-824794">
           <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-x">
     <path fill-rule="evenodd" d="M3.72 3.72a.75.75 0 011.06 0L8 6.94l3.22-3.22a.75.75 0 111.06 1.06L9.06 8l3.22 3.22a.75.75 0 11-1.06 1.06L8 9.06l-3.22 3.22a.75.75 0 01-1.06-1.06L6.94 8 3.72 4.78a.75.75 0 010-1.06z"></path>
 </svg>
         </button>
       <div
-        id="filter-menu-08c8ea"
+        id="filter-menu-824794"
         class="d-flex flex-column flex-1 overflow-hidden"
 >
         <div
@@ -2344,17 +2350,80 @@
     <include-fragment src="/97668589/BBR-NetSpeed/spoofed_commit_check/cd7edfcd464557d92554f536495d210380b219e6" data-test-selector="spoofed-commit-check"></include-fragment>
 
     <div class="Box d-flex flex-column flex-shrink-0 mb-3">
-  <include-fragment src="/97668589/BBR-NetSpeed/contributors/master/tcpx.sh" class="commit-loader">
-    <div class="Box-header d-flex flex-items-center">
-      <div class="Skeleton avatar avatar-user flex-shrink-0 ml-n1 mr-n1 mt-n1 mb-n1" style="width:24px;height:24px;"></div>
-      <div class="Skeleton Skeleton--text col-5 ml-2">&nbsp;</div>
-    </div>
+  
+  <div class="Box-header Details js-details-container">
+      <div class="d-flex flex-items-center">
+        <span class="flex-shrink-0 ml-n1 mr-n1 mt-n1 mb-n1">
+          <a rel="author" data-skip-pjax="true" data-hovercard-type="user" data-hovercard-url="/users/97668589/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/97668589"><img class="avatar avatar-user" src="https://avatars.githubusercontent.com/u/17848226?s=48&amp;v=4" width="24" height="24" alt="@97668589" /></a>
+        </span>
+        <div class="flex-1 d-flex flex-items-center ml-3 min-width-0">
+          <div class="css-truncate css-truncate-overflow">
+            <a class="text-bold Link--primary" rel="author" data-hovercard-type="user" data-hovercard-url="/users/97668589/hovercard" data-octo-click="hovercard-link-click" data-octo-dimensions="link_type:self" href="/97668589">97668589</a>
 
-    <div class="Box-body d-flex flex-items-center" >
-      <div class="Skeleton Skeleton--text col-1">&nbsp;</div>
-      <span class="color-fg-danger h6 loader-error">Cannot retrieve contributors at this time</span>
-    </div>
-</include-fragment></div>
+              <span class="markdown-title">
+                <a data-pjax="true" title="Add files via upload" class="Link--secondary" href="/97668589/BBR-NetSpeed/commit/cd7edfcd464557d92554f536495d210380b219e6">Add files via upload</a>
+              </span>
+          </div>
+
+
+          <span class="ml-2">
+            <include-fragment accept="text/fragment+html" src="/97668589/BBR-NetSpeed/commit/cd7edfcd464557d92554f536495d210380b219e6/rollup?direction=e" class="d-inline"></include-fragment>
+          </span>
+        </div>
+        <div class="ml-3 d-flex flex-shrink-0 flex-items-center flex-justify-end color-fg-muted no-wrap">
+          <span class="d-none d-md-inline">
+            <span>Latest commit</span>
+            <a class="text-small text-mono Link--secondary" href="/97668589/BBR-NetSpeed/commit/cd7edfcd464557d92554f536495d210380b219e6" data-pjax>cd7edfc</a>
+            <span itemprop="dateModified"><relative-time datetime="2022-04-20T06:06:16Z" class="no-wrap">Apr 20, 2022</relative-time></span>
+          </span>
+
+          <a data-pjax href="/97668589/BBR-NetSpeed/commits/master/tcpx.sh" class="ml-3 no-wrap Link--primary no-underline">
+            <svg text="gray" aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-history">
+    <path fill-rule="evenodd" d="M1.643 3.143L.427 1.927A.25.25 0 000 2.104V5.75c0 .138.112.25.25.25h3.646a.25.25 0 00.177-.427L2.715 4.215a6.5 6.5 0 11-1.18 4.458.75.75 0 10-1.493.154 8.001 8.001 0 101.6-5.684zM7.75 4a.75.75 0 01.75.75v2.992l2.028.812a.75.75 0 01-.557 1.392l-2.5-1A.75.75 0 017 8.25v-3.5A.75.75 0 017.75 4z"></path>
+</svg>
+            <span class="d-none d-sm-inline">
+              <strong>History</strong>
+            </span>
+          </a>
+        </div>
+      </div>
+
+  </div>
+
+  <div class="Box-body d-flex flex-items-center flex-auto border-bottom-0 flex-wrap" >
+    <details class="details-reset details-overlay details-overlay-dark lh-default color-fg-default float-left mr-3" id="blob_contributors_box">
+      <summary class="Link--primary">
+        <svg text="gray" aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-people">
+    <path fill-rule="evenodd" d="M5.5 3.5a2 2 0 100 4 2 2 0 000-4zM2 5.5a3.5 3.5 0 115.898 2.549 5.507 5.507 0 013.034 4.084.75.75 0 11-1.482.235 4.001 4.001 0 00-7.9 0 .75.75 0 01-1.482-.236A5.507 5.507 0 013.102 8.05 3.49 3.49 0 012 5.5zM11 4a.75.75 0 100 1.5 1.5 1.5 0 01.666 2.844.75.75 0 00-.416.672v.352a.75.75 0 00.574.73c1.2.289 2.162 1.2 2.522 2.372a.75.75 0 101.434-.44 5.01 5.01 0 00-2.56-3.012A3 3 0 0011 4z"></path>
+</svg>
+        <strong>1</strong>
+        
+        contributor
+      </summary>
+      <details-dialog
+        class="Box Box--overlay d-flex flex-column anim-fade-in fast"
+        aria-label="Users who have contributed to this file"
+        src="/97668589/BBR-NetSpeed/contributors-list/master/tcpx.sh" preload>
+        <div class="Box-header">
+          <button class="Box-btn-octicon btn-octicon float-right" type="button" aria-label="Close dialog" data-close-dialog>
+            <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-x">
+    <path fill-rule="evenodd" d="M3.72 3.72a.75.75 0 011.06 0L8 6.94l3.22-3.22a.75.75 0 111.06 1.06L9.06 8l3.22 3.22a.75.75 0 11-1.06 1.06L8 9.06l-3.22 3.22a.75.75 0 01-1.06-1.06L6.94 8 3.72 4.78a.75.75 0 010-1.06z"></path>
+</svg>
+          </button>
+          <h3 class="Box-title">
+            Users who have contributed to this file
+          </h3>
+        </div>
+        <include-fragment>
+          <svg style="box-sizing: content-box; color: var(--color-icon-primary);" width="32" height="32" viewBox="0 0 16 16" fill="none" data-view-component="true" class="my-3 mx-auto d-block anim-rotate">
+  <circle cx="8" cy="8" r="7" stroke="currentColor" stroke-opacity="0.25" stroke-width="2" vector-effect="non-scaling-stroke" />
+  <path d="M15 8a7.002 7.002 0 00-7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" vector-effect="non-scaling-stroke" />
+</svg>
+        </include-fragment>
+      </details-dialog>
+    </details>
+  </div>
+</div>
 
 
 
@@ -2430,7 +2499,7 @@
             </span>
 </span>
 </remote-clipboard-copy>
-          <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="inline-form js-update-url-with-hash" data-turbo="false" action="/97668589/BBR-NetSpeed/edit/master/tcpx.sh" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="wucdKEiQ7aeFSpAk_RABPHx7Jhp9X_dFH9Vg2H1yhL-cYCf69J6q1Hr2nbTJThgMvLQXGyCogypghojhCmhhFQ" />
+          <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="inline-form js-update-url-with-hash" data-turbo="false" action="/97668589/BBR-NetSpeed/edit/master/tcpx.sh" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="q2NPthqizjrkc4B8pifkLb_doGsfw6Cu0tL9gnEnf6D15HVkpqyJSRvPjeySef0dfxKRakI01MGtgRW7Bj2aCg" />
             <button class="btn-octicon tooltipped tooltipped-nw" type="submit"
               aria-label="Edit the file in your fork of this project" data-hotkey="e" data-disable-with>
               <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-pencil">
@@ -2438,7 +2507,7 @@
 </svg>
             </button>
 </form>
-          <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="inline-form" data-turbo="false" action="/97668589/BBR-NetSpeed/delete/master/tcpx.sh" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="gx817GbplitMFWlri81uB71wXaSCBXnqAH7f1wsoFNX8iLlwS68d5nv6xJSPGmb92N8emkVhhv6oTCKDVuAxlg" />
+          <!-- '"` --><!-- </textarea></xmp> --></option></form><form class="inline-form" data-turbo="false" action="/97668589/BBR-NetSpeed/delete/master/tcpx.sh" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="HnzkV1gCaDuFIckY9SidNWn8LOQxZJWRnIdCcKtNs-Jh62jLdUTj9rLOZOfx_5XPDFNv2vYAaoU0tb8k9oWWoQ" />
             <button class="btn-octicon btn-octicon-danger tooltipped tooltipped-nw" type="submit"
               aria-label="Delete the file in your fork of this project" data-disable-with>
               <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-trash">
