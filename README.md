@@ -20,6 +20,9 @@ chmod +x tcpx.sh
  
 3.执行脚本
 ./tcpx.sh
+
+![QQ截图20220427003129](https://user-images.githubusercontent.com/56907698/165348835-191a0724-e7ed-4434-bb92-907c54cf30ce.png)
+
 # Linux-NetSpeed
 ```
 搬瓦工在线库存查询
