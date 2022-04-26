@@ -2755,12 +2755,6 @@ https://zh.wikipedia.org/zh/Ubuntu
 https://wiki.ubuntu.com/Releases
 https://wiki.debian.org/LTS
 https://wiki.centos.org/zh/About/Product
-
-本项目执行脚本
-```
-wget --no-check-certificate -O tcpx.sh https://raw.githubusercontent.com/97668589/BBR-NetSpeed/master/tcpx.sh
-```
-
 </code></pre></div>
 </article>
   </div>
