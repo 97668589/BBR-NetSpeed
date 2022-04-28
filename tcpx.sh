@@ -4,7 +4,7 @@ export PATH
 #=================================================
 #	System Required: CentOS 7/8,Debian/ubuntu,oraclelinux
 #	Description: BBR+BBRplus+Lotserver
-#	Version: 2022.4.29
+#	Version: 2022.4.30
 #	Author: 千影,cx9208,YLX
 #	更新内容及反馈:  https://blog.ylx.me/archives/783.html
 #=================================================
@@ -15,7 +15,7 @@ export PATH
 # SKYBLUE='\033[0;36m'
 # PLAIN='\033[0m'
 
-sh_ver="2022.4.29"
+sh_ver="2022.4.30"
 github="raw.githubusercontent.com/97668589/BBR-NetSpeed/master"
 
 imgurl=""
@@ -1098,25 +1098,28 @@ net.ipv6.conf.lo.disable_ipv6 = 0" >>/etc/sysctl.d/99-sysctl.conf
 #开始菜单
 start_menu() {
   clear
-  echo && echo -e " TCP加速 (BBR-BBRPLUS-Lotserver) 一键安装管理脚本
- ${Red_font_prefix}[v${sh_ver}] ${Font_color_suffix}不卸内核 ${Red_font_prefix}注意：${Font_color_suffix}母鸡慎用
- ${Green_font_prefix}0.${Font_color_suffix} 升级脚本
- ${Green_font_prefix}9.${Font_color_suffix} 切换到卸载内核版本		${Green_font_prefix}10.${Font_color_suffix} 切换到一键DD系统脚本
- ${Green_font_prefix}1.${Font_color_suffix} 安装 BBR原版内核
- ${Green_font_prefix}2.${Font_color_suffix} 安装 BBRplus版内核		${Green_font_prefix}5.${Font_color_suffix} 安装 BBRplus新版内核
- ${Green_font_prefix}3.${Font_color_suffix} 安装 Lotserver(锐速)内核	${Green_font_prefix}6.${Font_color_suffix} 安装 Zen官方内核
- ${Green_font_prefix}30.${Font_color_suffix} 安装 官方稳定内核		${Green_font_prefix}31.${Font_color_suffix} 安装 官方最新内核 backports/elrepo
- ${Green_font_prefix}32.${Font_color_suffix} 安装 XANMOD官方内核	${Green_font_prefix}33.${Font_color_suffix} 安装 XANMOD官方高响应内核
- ${Green_font_prefix}11.${Font_color_suffix} 使用BBR+FQ加速		${Green_font_prefix}12.${Font_color_suffix} 使用BBR+FQ_PIE加速 
- ${Green_font_prefix}13.${Font_color_suffix} 使用BBR+CAKE加速
- ${Green_font_prefix}14.${Font_color_suffix} 使用BBR2+FQ加速	 	${Green_font_prefix}15.${Font_color_suffix} 使用BBR2+FQ_PIE加速 
- ${Green_font_prefix}16.${Font_color_suffix} 使用BBR2+CAKE加速
- ${Green_font_prefix}17.${Font_color_suffix} 开启ECN	 		${Green_font_prefix}18.${Font_color_suffix} 关闭ECN
- ${Green_font_prefix}19.${Font_color_suffix} 使用BBRplus+FQ版加速       ${Green_font_prefix}20.${Font_color_suffix} 使用Lotserver(锐速)加速
- ${Green_font_prefix}21.${Font_color_suffix} 系统配置优化	 	${Green_font_prefix}22.${Font_color_suffix} 应用johnrosen1的优化方案
- ${Green_font_prefix}23.${Font_color_suffix} 禁用IPv6	 		${Green_font_prefix}24.${Font_color_suffix} 开启IPv6
- ${Green_font_prefix}51.${Font_color_suffix} 查看排序内核               ${Green_font_prefix}52.${Font_color_suffix} 删除保留指定内核
- ${Green_font_prefix}25.${Font_color_suffix} 卸载全部加速	 	${Green_font_prefix}99.${Font_color_suffix} 退出脚本 
+  echo && echo -e " TCP加速 ${Green_font_prefix}(BBR-BBRPLUS-Lotserver)${Font_color_suffix} 一键安装管理脚本
+ ${Red_font_prefix}[v${sh_ver}] ${Font_color_suffix}不卸内核 ${Green_font_prefix}注意：${Font_color_suffix}母鸡慎用
+ ${Green_font_prefix}输入0.${Font_color_suffix} 升级脚本
+ ${Green_font_prefix}30.${Font_color_suffix} 安装 官方稳定内核                   ${Green_font_prefix}11.${Font_color_suffix} 使用BBR+FQ加速
+ ${Green_font_prefix}6.${Font_color_suffix} 安装 Zen官方内核                     ${Green_font_prefix}12.${Font_color_suffix} 使用BBR+FQ_PIE加速
+ ${Green_font_prefix}31.${Font_color_suffix} 安装 官方最新内核 backports/elrepo  ${Green_font_prefix}13.${Font_color_suffix} 使用BBR+CAKE加速
+ ${Green_font_prefix}33.${Font_color_suffix} 安装 XANMOD官方高响应内核           ${Green_font_prefix}14.${Font_color_suffix} 使用BBR2+FQ加速
+                                                                                 ${Green_font_prefix}15.${Font_color_suffix} 使用BBR2+FQ_PIE加速
+ ${Green_font_prefix}1.${Font_color_suffix} 安装 BBR原版内核                     ${Green_font_prefix}16.${Font_color_suffix} 使用BBR2+CAKE加速
+ ${Green_font_prefix}2.${Font_color_suffix} 安装 BBRplus版内核                   ${Green_font_prefix}19.${Font_color_suffix} 使用BBRplus+FQ版加速
+ ${Green_font_prefix}5.${Font_color_suffix} 安装 BBRplus新版内核                 ${Green_font_prefix}20.${Font_color_suffix} 使用Lotserver(锐速)加速
+ ${Green_font_prefix}32.${Font_color_suffix} 安装 XANMOD官方内核                    
+ ${Green_font_prefix}3.${Font_color_suffix} 安装 Lotserver(锐速)内核             ${Green_font_prefix}18.${Font_color_suffix} 关闭ECN
+                                                                                 ${Green_font_prefix}17.${Font_color_suffix} 开启ECN
+ ${Green_font_prefix}51.${Font_color_suffix} 查看排序内核                        ${Green_font_prefix}23.${Font_color_suffix} 禁用IPv6
+ ${Green_font_prefix}52.${Font_color_suffix} 删除保留指定内核                    ${Green_font_prefix}24.${Font_color_suffix} 开启IPv6
+ 
+ ${Green_font_prefix}10.${Font_color_suffix} 切换到一键DD系统脚本                ${Green_font_prefix}21.${Font_color_suffix} 系统配置优化
+ ${Green_font_prefix}9.${Font_color_suffix} 切换到卸载内核版本                   ${Green_font_prefix}22.${Font_color_suffix} 应用johnrosen1的优化方案
+ 
+ ${Green_font_prefix}25.${Font_color_suffix} 卸载全部加速                        
+ ${Green_font_prefix}99.${Font_color_suffix} 退出脚本 
 ————————————————————————————————————————————————————————————————" &&
     check_status
   get_system_info
