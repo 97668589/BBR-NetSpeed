@@ -4,7 +4,7 @@ export PATH
 #=================================================
 #	System Required: CentOS 7/8,Debian/ubuntu,oraclelinux
 #	Description: BBR+BBRplus+Lotserver
-#	Version: 2022.4.28
+#	Version: 2022.4.29
 #	Author: 千影,cx9208,YLX
 #	更新内容及反馈:  https://blog.ylx.me/archives/783.html
 #=================================================
@@ -15,7 +15,7 @@ export PATH
 # SKYBLUE='\033[0;36m'
 # PLAIN='\033[0m'
 
-sh_ver="2022.4.28"
+sh_ver="2022.4.29"
 github="raw.githubusercontent.com/97668589/BBR-NetSpeed/master"
 
 imgurl=""
@@ -1043,7 +1043,7 @@ Update_Shell() {
 #切换到卸载内核版本
 gototcp() {
   clear
-  wget -O tcp.sh "https://git.io/coolspeeda" && chmod +x tcp.sh && ./tcp.sh
+  wget -O tcp.sh "https://github.com/97668589/BBR-NetSpeed/raw/master/tcp.sh" && chmod +x tcp.sh && ./tcp.sh
 }
 
 #切换到秋水逸冰BBR安装脚本
@@ -1057,7 +1057,7 @@ gotodd() {
   clear
   echo DD使用git.beta.gs的脚本，知悉
   sleep 1.5
-  wget -O NewReinstall.sh https://git.io/newbetags && chmod a+x NewReinstall.sh && bash NewReinstall.sh
+  wget -O NewReinstall.sh https://github.com/fcurrk/reinstall/raw/master/NewReinstall.sh && chmod a+x NewReinstall.sh && bash NewReinstall.sh
   #wget -qO ~/Network-Reinstall-System-Modify.sh 'https://github.com/97668589/reinstall/raw/master/Network-Reinstall-System-Modify.sh' && chmod a+x ~/Network-Reinstall-System-Modify.sh && bash ~/Network-Reinstall-System-Modify.sh -UI_Options
 }
 
