@@ -1100,7 +1100,7 @@ start_menu() {
   clear
   echo && echo -e " TCP加速 ${Green_font_prefix}(BBR-BBRPLUS-Lotserver)${Font_color_suffix} 一键安装管理脚本
  ${Red_font_prefix}[v${sh_ver}] ${Font_color_suffix}不卸内核 ${Green_font_prefix}注意：${Font_color_suffix}母鸡慎用
- ————————————————————————————————————————————————————————————————" &&
+ ${Green_font_prefix}------------------------------------------------------------
  ${Green_font_prefix}输入0.${Font_color_suffix} 升级脚本
  ${Green_font_prefix}官方内核
  ${Green_font_prefix}30.${Font_color_suffix} 安装 官方稳定内核                   ${Green_font_prefix}11.${Font_color_suffix} 使用BBR+FQ加速
@@ -1113,14 +1113,12 @@ start_menu() {
  ${Green_font_prefix}2.${Font_color_suffix} 安装 BBRplus版内核                   ${Green_font_prefix}19.${Font_color_suffix} 使用BBRplus+FQ版加速
  ${Green_font_prefix}5.${Font_color_suffix} 安装 BBRplus新版内核                 ${Green_font_prefix}20.${Font_color_suffix} 使用Lotserver(锐速)加速
  ${Green_font_prefix}3.${Font_color_suffix} 安装 Lotserver(锐速)内核             ${Green_font_prefix}18.${Font_color_suffix} 关闭ECN
- ${Green_font_prefix}其他项                                                      ${Green_font_prefix}17.${Font_color_suffix} 开启ECN
- ${Green_font_prefix}51.${Font_color_suffix} 查看排序内核                        ${Green_font_prefix}23.${Font_color_suffix} 禁用IPv6
- ${Green_font_prefix}52.${Font_color_suffix} 删除保留指定内核                    ${Green_font_prefix}24.${Font_color_suffix} 开启IPv6
+ ${Green_font_prefix}51.${Font_color_suffix} 查看排序内核                        ${Green_font_prefix}17.${Font_color_suffix} 开启ECN
+ ${Green_font_prefix}52.${Font_color_suffix} 删除保留指定内核                    ${Green_font_prefix}23.${Font_color_suffix} 禁用IPv6
+ ${Green_font_prefix}10.${Font_color_suffix} 切换到一键DD系统脚本                ${Green_font_prefix}24.${Font_color_suffix} 开启IPv6
  
- ${Green_font_prefix}10.${Font_color_suffix} 切换到一键DD系统脚本                ${Green_font_prefix}21.${Font_color_suffix} 系统配置优化
- ${Green_font_prefix}9.${Font_color_suffix} 切换到卸载内核版本                   ${Green_font_prefix}22.${Font_color_suffix} 应用johnrosen1的优化方案
- 
- ${Green_font_prefix}25.${Font_color_suffix} 卸载全部加速
+ ${Green_font_prefix}9.${Font_color_suffix} 切换到卸载内核版本                   ${Green_font_prefix}21.${Font_color_suffix} 系统配置优化
+ ${Green_font_prefix}25.${Font_color_suffix} 卸载全部加速                        ${Green_font_prefix}22.${Font_color_suffix} 应用johnrosen1的优化方案
  ${Green_font_prefix}99.${Font_color_suffix} 退出脚本
 ————————————————————————————————————————————————————————————————" &&
     check_status
