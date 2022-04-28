@@ -4,7 +4,7 @@ export PATH
 #=================================================
 #	System Required: CentOS 7/8,Debian/ubuntu,oraclelinux
 #	Description: BBR+BBRplus+Lotserver
-#	Version: 2022.4.33
+#	Version: 2022.4.34
 #	Author: 千影,cx9208,YLX
 #	更新内容及反馈:  https://blog.ylx.me/archives/783.html
 #=================================================
@@ -15,7 +15,7 @@ export PATH
 # SKYBLUE='\033[0;36m'
 # PLAIN='\033[0m'
 
-sh_ver="2022.4.33"
+sh_ver="2022.4.34"
 github="raw.githubusercontent.com/97668589/BBR-NetSpeed/master"
 
 imgurl=""
@@ -1109,7 +1109,7 @@ start_menu() {
  ${Green_font_prefix}27.${Font_color_suffix} 安装 官方最新内核 backports/elrepo  ${Green_font_prefix}13.${Font_color_suffix} 使用BBR+CAKE加速
  ${Green_font_prefix}28.${Font_color_suffix} 安装 XANMOD官方内核                 ${Green_font_prefix}14.${Font_color_suffix} 使用BBR2+FQ加速
  ${Green_font_prefix}29.${Font_color_suffix} 安装 XANMOD官方高响应内核           ${Green_font_prefix}15.${Font_color_suffix} 使用BBR2+FQ_PIE加速
- ${Green_font_prefix}BBR+BBRplus+Lotserver                                       ${Green_font_prefix}16.${Font_color_suffix} 使用BBR2+CAKE加速
+ ${Green_font_prefix}BBR+BBRplus+Lotserver                   ${Green_font_prefix}16.${Font_color_suffix} 使用BBR2+CAKE加速
  ${Green_font_prefix}1.${Font_color_suffix} 安装 BBR原版内核                     ${Green_font_prefix}17.${Font_color_suffix} 使用BBRplus+FQ版加速
  ${Green_font_prefix}2.${Font_color_suffix} 安装 BBRplus版内核                   ${Green_font_prefix}18.${Font_color_suffix} 使用Lotserver(锐速)加速
  ${Green_font_prefix}3.${Font_color_suffix} 安装 BBRplus新版内核                 ${Green_font_prefix}19.${Font_color_suffix} 关闭ECN
