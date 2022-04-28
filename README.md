@@ -82,7 +82,7 @@ sysctl --system
 ylx2016与chiakge、cx9208无任何关系
 bbsplus算法原作者
 https://blog.csdn.net/dog250/article/details/80629551
-bbrplus首用名 ？
+bbrplus原版
 https://github.com/cx9208/bbrplus
 新版bbrplus
 https://github.com/UJX6N/bbrplus-5.10
