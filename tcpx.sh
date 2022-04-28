@@ -4,7 +4,7 @@ export PATH
 #=================================================
 #	System Required: CentOS 7/8,Debian/ubuntu,oraclelinux
 #	Description: BBR+BBRplus+Lotserver
-#	Version: 2022.4.36
+#	Version: 2022.4.37
 #	Author: 千影,cx9208,YLX
 #	更新内容及反馈:  https://blog.ylx.me/archives/783.html
 #=================================================
@@ -15,7 +15,7 @@ export PATH
 # SKYBLUE='\033[0;36m'
 # PLAIN='\033[0m'
 
-sh_ver="2022.4.36"
+sh_ver="2022.4.37"
 github="raw.githubusercontent.com/97668589/BBR-NetSpeed/master"
 
 imgurl=""
@@ -1303,7 +1303,7 @@ detele_kernel_head() {
 
 detele_kernel_custom() {
   BBR_grub
-  read -p " 查看上面内核输入需保留保留保留的内核关键词(如:5.15.0-11) :" kernel_version
+  read -p " 查看上面内核版本号:输入需保留的内核关键词(如:5.4.0-109) :" kernel_version
   detele_kernel
   detele_kernel_head
   BBR_grub
