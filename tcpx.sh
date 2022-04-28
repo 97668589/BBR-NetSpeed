@@ -4,7 +4,7 @@ export PATH
 #=================================================
 #	System Required: CentOS 7/8,Debian/ubuntu,oraclelinux
 #	Description: BBR+BBRplus+Lotserver
-#	Version: 2022.4.32
+#	Version: 2022.4.33
 #	Author: 千影,cx9208,YLX
 #	更新内容及反馈:  https://blog.ylx.me/archives/783.html
 #=================================================
@@ -15,7 +15,7 @@ export PATH
 # SKYBLUE='\033[0;36m'
 # PLAIN='\033[0m'
 
-sh_ver="2022.4.32"
+sh_ver="2022.4.33"
 github="raw.githubusercontent.com/97668589/BBR-NetSpeed/master"
 
 imgurl=""
@@ -1096,9 +1096,11 @@ net.ipv6.conf.lo.disable_ipv6 = 0" >>/etc/sysctl.d/99-sysctl.conf
 }
 #开始菜单
 start_menu() {
- ${Green_font_prefix}--------------------------------------------
+ 
   clear
-  echo && echo -e " TCP加速 ${Green_font_prefix}(BBR-BBRPLUS-Lotserver)${Font_color_suffix} 一键安装管理脚本
+  echo && echo -e " 
+ ${Green_font_prefix}--------------------------------------------
+ TCP加速 ${Green_font_prefix}(BBR-BBRPLUS-Lotserver)${Font_color_suffix} 一键安装管理脚本
  ${Red_font_prefix}[v${sh_ver}] ${Font_color_suffix}不卸内核 ${Green_font_prefix}注意：${Font_color_suffix}母鸡慎用
  ${Green_font_prefix}--------------------------------------------
  ${Green_font_prefix}官方内核
@@ -1119,7 +1121,7 @@ start_menu() {
  ${Green_font_prefix}9.${Font_color_suffix} 卸载全部加速
  ${Green_font_prefix}--------------------------------------------
  ${Green_font_prefix}10.${Font_color_suffix} 退出脚本
- ${Green_font_prefix}0.{Green_font_prefix} 升级脚本
+ ${Green_font_prefix}0. 升级脚本
 ————————————————————————————————————————————————————————————————" &&
     check_status
   get_system_info
