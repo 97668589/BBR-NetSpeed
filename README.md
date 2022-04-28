@@ -23,7 +23,7 @@ chmod +x tcpx.sh
 
 ./tcpx.sh
 
-![QQ截图20220427003129](https://user-images.githubusercontent.com/56907698/165348835-191a0724-e7ed-4434-bb92-907c54cf30ce.png)
+![QQ截图20220428221042](https://user-images.githubusercontent.com/56907698/165771926-d3150f1b-6a16-4f21-ad43-37f7c98d02c4.png)
 
 # Linux-NetSpeed
 ```
