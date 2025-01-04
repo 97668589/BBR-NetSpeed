@@ -15,7 +15,7 @@ export PATH
 # SKYBLUE='\033[0;36m'
 # PLAIN='\033[0m'
 
-sh_ver="2022.4.37"
+sh_ver="2025.1.5"
 github="raw.githubusercontent.com/97668589/BBR-NetSpeed/master"
 
 imgurl=""
