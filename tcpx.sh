@@ -4,7 +4,7 @@ export PATH
 #=================================================
 #	System Required: CentOS 7/8,Debian/ubuntu,oraclelinux
 #	Description: BBR+BBRplus+Lotserver
-#	Version: 2025.12.1
+#	Version: 2025.12.3
 #	Author: 千影,cx9208,YLX
 #	更新内容及反馈:  https://blog.ylx.me/archives/783.html
 #=================================================
@@ -15,7 +15,7 @@ export PATH
 # SKYBLUE='\033[0;36m'
 # PLAIN='\033[0m'
 
-sh_ver="2025.12.1"
+sh_ver="2025.12.3"
 github="raw.githubusercontent.com/97668589/BBR-NetSpeed/master"
 
 imgurl=""
@@ -743,67 +743,73 @@ remove_all() {
 
 #优化系统配置
 #!/bin/bash
-# VPS sysctl 优化 (V2Ray/VLESS+TCP+Reality 专用)
-# 兼容 Debian/Ubuntu/CentOS
-# BBR + FQ + TCP Fast Open + 高 file limit
+# VPS sysctl 优化 (V2Ray/VLESS + TCP + Reality 专用)
+# 兼容 Debian / Ubuntu / CentOS
+# 专业 TCP 调优 + BBR + FQ + 高吞吐优化
 
 optimizing_system_v2ray() {
-  echo -e "[INFO] 开始应用 VPS 系统优化配置..."
+  echo -e "[INFO] 正在应用 V2Ray/VLESS 网络优化配置..."
 
-# ----------------备份原始配置----------------
-cp /etc/sysctl.conf /etc/sysctl.conf.bak.$(date +%s)
-cp /etc/security/limits.conf /etc/security/limits.conf.bak.$(date +%s)
+  # 备份原始配置
+  cp /etc/sysctl.conf /etc/sysctl.conf.bak.$(date +%s)
+  cp /etc/security/limits.conf /etc/security/limits.conf.bak.$(date +%s)
 
-# ----------------应用 sysctl 优化----------------
-cat >/etc/sysctl.conf <<EOF
-# 基础网络优化
+  # 应用 sysctl 优化
+  cat >/etc/sysctl.conf <<EOF
+# ---------------- TCP 拥塞控制 ----------------
 net.core.default_qdisc = fq
 net.ipv4.tcp_congestion_control = bbr
+
+# ---------------- TCP 基础优化 ----------------
 net.ipv4.tcp_fastopen = 3
-net.core.somaxconn = 32768
-net.core.netdev_max_backlog = 32768
 net.ipv4.tcp_tw_reuse = 1
-net.ipv4.tcp_fin_timeout = 15
+net.ipv4.tcp_fin_timeout = 10
 net.ipv4.tcp_max_syn_backlog = 262144
+net.core.somaxconn = 65535
+net.core.netdev_max_backlog = 65535
 net.ipv4.ip_local_port_range = 1024 65535
 
-# TCP 保活
+# ---------------- 关键：Reality 加速核心参数 ----------------
+net.ipv4.tcp_notsent_lowat = 16384      # 缩小发送缓存，加速高 RTT 线路
+net.ipv4.tcp_mtu_probing = 1            # 自动探测 MTU，减少跨国分片
+
+# ---------------- TCP 保活 ----------------
 net.ipv4.tcp_keepalive_time = 1200
 net.ipv4.tcp_keepalive_intvl = 15
 net.ipv4.tcp_keepalive_probes = 5
 
-# 防止 SYN Flood
-net.ipv4.tcp_syncookies = 1
+# ---------------- 缓冲区优化 ----------------
 net.ipv4.tcp_rmem = 4096 87380 67108864
 net.ipv4.tcp_wmem = 4096 65536 67108864
 net.core.rmem_max = 67108864
 net.core.wmem_max = 67108864
 
-# 文件句柄限制
-fs.file-max = 65535
+# ---------------- 防御 SYN Flood ----------------
+net.ipv4.tcp_syncookies = 1
+
+# ---------------- 文件句柄限制 ----------------
+fs.file-max = 1000000
 vm.overcommit_memory = 1
 EOF
 
-# 应用修改
-sysctl -p
+  sysctl -p
 
-# ----------------应用 limits.conf----------------
-cat >/etc/security/limits.conf <<EOF
-* soft nofile 65535
-* hard nofile 65535
+  # limits.conf 优化
+  cat >/etc/security/limits.conf <<EOF
+* soft nofile 1000000
+* hard nofile 1000000
 EOF
 
-# 配置 ulimit
-if ! grep -q "ulimit -SHn" /etc/profile; then
-  echo "ulimit -SHn 65535" >>/etc/profile
-fi
+  # ulimit 配置
+  if ! grep -q "ulimit -SHn" /etc/profile; then
+    echo "ulimit -SHn 1000000" >> /etc/profile
+  fi
 
-# ----------------透明大页优化----------------
-echo madvise >/sys/kernel/mm/transparent_hugepage/enabled
+  # 透明大页优化
+  echo madvise >/sys/kernel/mm/transparent_hugepage/enabled
 
-# ----------------完成提示----------------
-echo -e "\n${Info} VPS 网络优化已应用完成！"
-echo -e "建议重启 VPS 以完全生效\n"
+  echo -e "\n[INFO] 🔧 V2Ray/VLESS 网络优化已应用完成！"
+  echo -e "[INFO] ⚠ 建议重启 VPS 以完全生效。\n"
 }
 
 #更新脚本
